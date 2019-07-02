@@ -13,7 +13,6 @@
 <h3>Summary</h3>
 
 The hierarchical recurrent neural network algorithm  model has been deployed to detect accidents in never-before-seen videos.
-
 <br /><br />
 
 <a name="Data"/>
