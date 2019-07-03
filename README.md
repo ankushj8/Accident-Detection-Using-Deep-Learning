@@ -51,7 +51,7 @@ You can install Conda for python which resolves all the dependencies for machine
 
 ##### pip install requirements.txt
 
-<h3>Procedure</h3>:
+<h3>Procedure</h3>
 
 1) Run `create_dataset.py` for converting the video to images.
 2) Then run `main.py` to train the model.
