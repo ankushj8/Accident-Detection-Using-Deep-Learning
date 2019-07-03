@@ -46,6 +46,24 @@ The algorithm uses two layers of long short-term memory neural networks. The fir
 
 Through this method, the HRNN incorporates a time-dependent aspect of the frames within each video to predict how likely it is a new video contains a car accident.
 
+### Code Requirements
+You can install Conda for python which resolves all the dependencies for machine learning.
+
+##### pip install requirements.txt
+
+<h3>Procedure</h3>:
+
+1) Run `create_dataset.py` for converting the video to images.
+2) Then run `main.py` to train the model.
+3) Finally, run `model.py` for testing your model.
+
+
+### Contributors
+
+##### 1) [Ankush Jain](https://github.com/ankush17100/)
+##### 2) [Ritwik Singh](https://github.com/ritwik-singh)
+##### 3) [Garima Gupta](https://github.com/Garimagupta85)
+
 <a name="References"/>
 <h3>References</h3>
 
