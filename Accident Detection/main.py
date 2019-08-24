@@ -39,9 +39,9 @@ is extracted to a paricular size of (144,256)
 '''
 
 def load_set(img_path):
-img = load_img(img_path)
-tmp = skimage.color.rgb2gray(np.array(img))
-tmp = transform.resize(tmp, (144, 256))
+  img = load_img(img_path)
+  tmp = skimage.color.rgb2gray(np.array(img))
+  tmp = transform.resize(tmp, (144, 256))
 return tmp
 
 '''
@@ -51,11 +51,11 @@ is extracted to a paricular size of (144,256) and is horizontally filpped
 '''
 
 def horizontal_flip(img_path):
-img = load_img(img_path)
-tmp = skimage.color.rgb2gray(np.array(img))
-tmp = skimage.transform.resize(tmp, (144, 256))
-tmp = np.array(tmp)
-tmp = np.flip(tmp, axis = 1)
+  img = load_img(img_path)
+  tmp = skimage.color.rgb2gray(np.array(img))
+  tmp = skimage.transform.resize(tmp, (144, 256))
+  tmp = np.array(tmp)
+  tmp = np.flip(tmp, axis = 1)
 return tmp
 
 
@@ -80,7 +80,7 @@ positve data and [1 0] for negative data
 
 def label_matrivalues):
 
-n_values = np.mavalues) + 1 
+  n_values = np.mavalues) + 1 
 return np.eye(n_values)[values] 
 
 labels = np.concatenate(([1]*len(pos), [0]*len(neg[0:len(pos)]))) 
@@ -90,34 +90,33 @@ labels = label_matrilabels)
 
 def load_data1(path):
 
-x = []
-for files in os.listdir(path):
+  x = []
+  for files in os.listdir(path):
 
-frames = []
-img_path = path+"/"+files
-if files !=("frame99.jpg"):
-img = load_set(img_path)
-x.append(img)
+  frames = []
+  img_path = path+"/"+files
+  if files !=("frame99.jpg"):
+    img = load_set(img_path)
+  x.append(img)
 return x
 
 
 
 def load_data3(path):
-count = 0
-x = []
-for files in os.listdir(path):
-
-frames = []
-img_path = path+"/"+files
-if count < 99:
-count = count + 1
-img = load_set(img_path)
-x.append(img)
+  count = 0
+  x = []
+  for files in os.listdir(path):
+    frames = []
+    img_path = path+"/"+files
+    if count < 99:
+      count = count + 1
+      img = load_set(img_path)
+  x.append(img)
 return x
 
 
 def load_data2(path): 
-x = []
+  x = []
 
 for files in os.listdir(path):
 
